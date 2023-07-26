@@ -15,7 +15,7 @@ SetCounter("counter", "inc", 1);
 //    * Then play intro and instructions
 //    * Training phase
 //    * Intermission after training
-//    * MAIN: randomizes the stentences, break after N sentences
+//    * MAIN: randomizes the sentences, break after N sentences
 //    * Debrief, send results, and a goodbye message with verification link (if applicable)
 Sequence("counter",
     "intro",
@@ -138,7 +138,7 @@ Template("training_gmaze.csv", row =>
             .remove()
             .test.passed()
             .failure(newText("<br/>oops!").css("font-size", "1em").css("color", "red").print())
-            //.success(newText("<br/>great!").css("font-size", "1.5em").css("color", "green").print())
+            .success(newText("<br/>great!").css("font-size", "1.5em").css("color", "green").print())
             .success(getVar("training_successes").set(v => v + 1), newText("<br/>great!").css("font-size", "1.5em").css("color", "green").print())
 
         ,
@@ -234,8 +234,8 @@ newTrial("debrief",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>We'd be very happy if you take a short moment to provide brief, voluntary feedback.<br/>" +
-        "This information will help us with the evaluation of the results.</p>")
+    newText("<p>We'd be very happy if you provide brief, voluntary feedback.<br/>" +
+        "This will help us with the evaluation of the data.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -275,7 +275,17 @@ newTrial("debrief",
         .print()
         .log()
     ,
-
+    newText("<p>Would you be interested in participating in a potential follow-up study?</p>")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+    newScale("follow-up", "yes", "no")
+        .css("font-family", "Verdana")
+        .settings.vertical()
+        .labelsPosition("right")
+        .print()
+        .log()
+    ,
     newText("<p> </p>")
         .css("font-family", "Verdana")
         .print()
@@ -304,11 +314,11 @@ newTrial("goodbye",
         .css("font-family", "Verdana")
         .print()
     ,
-    /* newText("<strong><a href='https://app.prolific.co/submissions/complete?cc=8B2C141F'>Click here to return to Prolific to validate your participation.</a></strong>")
+    newText("<strong><a href='https://app.prolific.co/submissions/complete?cc=CI32TTE7'>Click here to return to Prolific to validate your participation.</a></strong>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
-    ,*/
+    ,
     newText("<p><br/>You can find info on the corresponding researcher <a href='https://www.sfla.ch/' target='_blank'>here</a> (opens new tab).</p>")
         .css("font-size", ".8em")
         .css("font-family", "Verdana")
