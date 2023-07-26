@@ -104,8 +104,7 @@ newTrial("instructions" ,
         "<p>Errors are okay, sometimes even expected. Just try to avoid too many errors<br> " +
         "and pay close attention to what you are reading.</p>"+
         "<p>We’ll start with up to 5 practice sentences. Training ends early when you have<br> " +
-        "successfully mazed through 3 sentences (it will then take a few seconds to jump<br> "+
-        "the rest and load the main experiment).</p>")
+        "successfully mazed through 2 sentences.</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
@@ -138,7 +137,7 @@ Template("training_gmaze.csv", row =>
             .remove()
             .test.passed()
             .failure(newText("<br/>oops!").css("font-size", "1em").css("color", "red").print())
-            .success(newText("<br/>great!").css("font-size", "1.5em").css("color", "green").print())
+            //.success(newText("<br/>great!").css("font-size", "1.5em").css("color", "green").print())
             .success(getVar("training_successes").set(v => v + 1), newText("<br/>great!").css("font-size", "1.5em").css("color", "green").print())
 
         ,
@@ -156,8 +155,7 @@ Template("training_gmaze.csv", row =>
 newTrial("intermission" ,
 
     newText("<p>Alright, you should be good to go for the 32 experimental sentences!<br/>" +
-        "Remember: try to be <strong>quick and accurate</strong>.</p>" +
-        "<p>Some sentences will be quite complex, some will be simpler.</p>" +
+        "Remember: try to be <strong>quick but accurate</strong>.</p>" +
         "<p>The task is fun, but also demanding, so there are designated<br/>" +
         "breaks every 8 sentences at which points you can pause if you want.<br/></p>" +
         "<p>Please <strong>do not</strong> take a break <em>while</em> reading a sentence.</p>")
@@ -214,7 +212,7 @@ Template("gmaze01.csv", row =>
     ,
     newTrial("break",
 
-        newText("<p>Well done, you've can take a short break if you want.</p>" +
+        newText("<p>Take a short break if you want.</p>" +
             "Press SPACE to continue.")
             .css("font-family", "Verdana")
             .center()
@@ -234,8 +232,8 @@ newTrial("debrief",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>We'd be very happy if you provide brief, voluntary feedback.<br/>" +
-        "This will help us with the evaluation of the data.</p>")
+    newText("<p>We'd be happy if you provide brief, voluntary feedback.<br/>" +
+        "This helps us with the evaluation of the data.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -250,7 +248,7 @@ newTrial("debrief",
         .print()
         .log()
     ,
-    newText("<p>In a few words: Any thoughts on this experiment? Difficult? Fun?</p>")
+    newText("<p><strong>Any thoughts on this experiment? Difficult? Fun?</strong></p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -262,11 +260,10 @@ newTrial("debrief",
         .print()
         .log()
     ,
-    newText("<p>What do you think the experiment was about?</p>")
+    newText("<p><strong>What do you think the experiment was about?</strong></p>")
         .css("font-family", "Verdana")
         .print()
     ,
-
     newTextInput("topic", "")
         .settings.log()
         .settings.lines(0)
@@ -275,7 +272,7 @@ newTrial("debrief",
         .print()
         .log()
     ,
-    newText("<p>Would you be interested in participating in a potential follow-up study?</p>")
+    newText("<p><strong>Would you be interested in participating in a similar follow-up study?</strong></p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -319,7 +316,7 @@ newTrial("goodbye",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p><br/>You can find info on the corresponding researcher <a href='https://www.sfla.ch/' target='_blank'>here</a> (opens new tab).</p>")
+    newText("<p><br/>You can find the corresponding researcher <a href='https://www.sfla.ch/' target='_blank'>here</a> (opens new tab).</p>")
         .css("font-size", ".8em")
         .css("font-family", "Verdana")
         .print()
