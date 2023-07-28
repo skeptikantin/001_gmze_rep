@@ -176,8 +176,8 @@ newTrial("intermission" ,
 Template("gmaze01.csv", row =>
     newTrial("experiment",
 
-        /* add, temporarily, an ID to check where alternatives are ambiguous
-        newText("ExpId", row.SntId)*/
+        /* add, temporarily, an ID to check where alternatives are ambiguous */
+        newText("ExpId", row.SntId)
             .css("font-family", "Verdana")
             .center()
             .print()
