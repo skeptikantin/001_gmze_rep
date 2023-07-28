@@ -22,7 +22,7 @@ Sequence("counter",
     "instructions",
     "training",
     "intermission",
-    sepWithN( "break" , randomize("experiment") , 2),
+    sepWithN( "break" , randomize("experiment") , 6),
     "debrief", SendResults(), "goodbye")
 
 // C: Define a header that happens at the beginning of every single trial
@@ -154,10 +154,10 @@ Template("training_gmaze.csv", row =>
 
 newTrial("intermission" ,
 
-    newText("<p>Alright, you should be good to go for the 32 experimental sentences!<br/>" +
+    newText("<p>Alright, you should be good to go for the 24 experimental sentences!<br/>" +
         "Remember: try to be <strong>quick but accurate</strong>.</p>" +
         "<p>The task is fun, but also demanding, so there are designated<br/>" +
-        "breaks every 8 sentences at which points you can pause if you want.<br/></p>" +
+        "breaks every 6 sentences at which points you can pause if you want.<br/></p>" +
         "<p>Please <strong>do not</strong> take a break <em>while</em> reading a sentence.</p>")
         .css("font-family", "Verdana")
         .print()
@@ -177,11 +177,11 @@ Template("gmaze01.csv", row =>
     newTrial("experiment",
 
         /* add, temporarily, an ID to check where alternatives are ambiguous
-        newText("ExpId", row.SntId)
+        newText("ExpId", row.SntId)*/
             .css("font-family", "Verdana")
             .center()
             .print()
-        ,*/
+        ,
         // add, temporarily, the group variable
         newText("Group", row.Group)
             .css("font-family", "Verdana")
@@ -209,6 +209,7 @@ Template("gmaze01.csv", row =>
         .log("ExpId", row.ExpId)
         .log("SntId", row.SntId)
         .log("Group", row.Group)
+        .log("Critical", row.Critical)
     ,
     newTrial("break",
 
