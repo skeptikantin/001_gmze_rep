@@ -102,7 +102,9 @@ newTrial("instructions" ,
         "If you pick the wrong word, you'll see an error, but can try again to continue reading.</p>" +
         "<p><strong>Please try to be quick <em>and</em> accurate.</strong></p>" +
         "<p>Errors are okay, sometimes even expected. Just try to avoid too many errors<br> " +
-        "and pay close attention to what you are reading.</p>"+
+        "by paying close attention to what you are reading.</p>"+
+        "<p>The first few alternatives will be pseudo-words to help you get into the sentence,<br/>"+
+        "then the alternatives will be grammatically incorrect to continue the sentence.</p>"
         "<p>We’ll start with a couple of practice sentences.</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
