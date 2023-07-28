@@ -63,18 +63,18 @@ A,md,29,md15,The attentive assistant could later tell that her boss was nervous.
 B,md,30,md15,The attentive assistant could tell that her boss was nervous.,det1 adj1 noun1 mod verb comp2 pron2 noun2 verb2 adj2,x-x-x deficient mountains miles anti their sell sure holy debates.,4
 C,md,31,md16,The arrogant niece could later look ungrateful.,det1 adj1 noun1 mod adv verb adj2,x-x-x suck windy miles china other dealership.,5
 D,md,32,md16,The arrogant niece could look ungrateful.,det1 adj1 noun1 mod verb adj2,x-x-x suck windy miles other dealership.,4
-A,mc,1,mc1,The comment about his family made him feel uncomfortable.,det1 noun1 prep2 pron2 noun2 make pron verb adj1,x-x-x anymore china grow nobody hell bill anti modifications.,7
-D,mc,4,mc1,The comment about his family made our new colleague feel uncomfortable.,det1 noun1 prep2 pron2 noun2 make pron adj noun verb adj1,x-x-x anymore china grow nobody hell bill else enforcing anti modifications.,9
+A,mc,1,mc1,The comment about his suit made him feel uncomfortable.,det1 noun1 prep2 pron2 noun2 make pron verb adj1,x-x-x anymore china grow nobody hell bill anti modifications.,7
+D,mc,4,mc1,The comment about his suit made our new colleague feel uncomfortable.,det1 noun1 prep2 pron2 noun2 make pron adj noun verb adj1,x-x-x anymore china grow nobody hell bill else enforcing anti modifications.,9
 C,mc,5,mc2,The joke about cats makes her laugh hard.,det1 noun1 prep2 noun2 make pron verb adj1,x-x-x deny china semi least but islands that.,6
 B,mc,8,mc2,The joke about cats made the old man laugh hard.,det1 noun1 prep2 noun2 make det adj noun verb adj1,x-x-x deny china semi least yes nor else islands that.,8
 B,mc,9,mc3,The suspect managed to make them believe his story.,det1 noun1 verb1 to1 make pron verb pron2 noun2,x-x-x reuths seasons wish yeah hill disease walks click.,6
 A,mc,12,mc3,The suspect managed to make the private investigator believe his story.,det1 noun1 verb1 to1 make det adj noun verb pron2 noun2,x-x-x reuths seasons wish yeah kid happens incorporates disease walks click.,8
 D,mc,13,mc4,The boss said that we need to make this happen soon.,det1 noun1 verb1 comp2 pron2 verb2 to make pron verb adv3,x-x-x gone glad mind but anti pre east west cities rose.,9
 C,mc,16,mc4,The boss said that we need to make some important changes happen soon.,det1 noun1 verb1 comp2 pron2 verb2 to make det adj noun verb adv3,x-x-x gone glad mind but anti pre east hill describes becomes cities rose.,11
-A,mc,17,mc5,The uncle's behavior last Christmas made me cringe in shame.,det1 noun1a noun1b adv1 noun1c make pron verb prep3 noun3,x-x-x either somebody glad Countries sure may syntax year seeks.,7
-D,mc,20,mc5,The uncle's behavior last Christmas made the entire family cringe in shame.,det1 noun1a noun1b adv1 noun1c make det adj noun verb prep3 noun3,x-x-x either somebody glad Countries sure yes except beyond syntax year seeks.,9
-C,mc,21,mc6,The sudden sounds always make me shiver a bit.,det1 adj1 noun1 adv1 make pronA verb det2 noun2,x-x-x behave posted senate lord fund bidder anti nor.,6
-B,mc,24,mc6,The sudden sounds always make my jumpy brother shiver a bit.,det1 adj1 noun1 adv1 make pronB adj noun verb det2 noun2,x-x-x behave posted senate lord vs cools senator bidder anti nor.,8
+A,mc,17,mc5,The uncle's behavior last Christmas made me cringe in shame.,det1 noun1a noun1b adv1 noun1c make pron verb prep3 noun3,x-x-x either somebody glad Countries okay may syntax year seeks.,7
+D,mc,20,mc5,The uncle's behavior last Christmas made the entire family cringe in shame.,det1 noun1a noun1b adv1 noun1c make det adj noun verb prep3 noun3,x-x-x either somebody glad Countries okay yes except beyond syntax year seeks.,9
+C,mc,21,mc6,The sudden sounds always make me shiver.,det1 adj1 noun1 adv1 make pronA verb det2 noun2,x-x-x behave posted senate lord fund bidder.,6
+B,mc,24,mc6,The sudden sounds always make my jumpy brother shiver.,det1 adj1 noun1 adv1 make pronB adj noun verb det2 noun2,x-x-x behave posted senate lord vs cools senator bidder.,8
 D,mc,25,mc7,The thought of the upcoming exam makes him sweat already.,det1a noun1a of1 det1b adj1 noun1b make pron verb adv2,x-x-x imagine pre etc reviewed aids weird could creek airport.,8
 A,mc,28,mc7,The thought of the upcoming exam makes the nervous student sweat already.,det1a noun1a of1 det1b adj1 noun1b make det adj noun verb adv2,x-x-x imagine pre etc reviewed aids weird yes forever tonight creek airport.,10
 B,mc,29,mc8,The cold weather today made her tremble.,det1 adj1 noun1 adv1 make pronA verb,x-x-x deny anybody thank glad yes forgery.,6

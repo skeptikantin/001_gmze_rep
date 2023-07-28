@@ -103,8 +103,7 @@ newTrial("instructions" ,
         "<p><strong>Please try to be quick <em>and</em> accurate.</strong></p>" +
         "<p>Errors are okay, sometimes even expected. Just try to avoid too many errors<br> " +
         "and pay close attention to what you are reading.</p>"+
-        "<p>We’ll start with up to 5 practice sentences. Training ends early when you have<br> " +
-        "successfully mazed through 2 sentences.</p>")
+        "<p>We’ll start with a couple of practice sentences.</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
@@ -189,7 +188,7 @@ Template("gmaze01.csv", row =>
             .print()
         ,
 
-        newTimer("Timer2", 500)
+        newTimer("Timer2", 300)
             .start()
             .wait()
         ,
@@ -200,10 +199,10 @@ Template("gmaze01.csv", row =>
             .wait()
             .remove()
             .test.passed()
-        ,
-         newTimer("Timer3", 500)
+        /*,
+         newTimer("Timer3", 300)
             .start()
-            .wait()
+            .wait()*/
     )
         // logs additional variables in sentence file (e.g., Fun)
         .log("ExpId", row.ExpId)
@@ -238,7 +237,7 @@ newTrial("debrief",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Please indicate your handedness:</p>")
+    newText("<p><strong>Please indicate your handedness:</strong></p>")
         .css("font-family", "Verdana")
         .print()
     ,
