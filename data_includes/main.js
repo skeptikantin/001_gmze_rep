@@ -3,7 +3,7 @@
 // https://www.pcibex.net/documentation/
 
 PennController.ResetPrefix(null); // Shorten command names (keep this line here)
-PennController.DebugOff();
+PennController.DebugOff(); // comment this out for the experiment
 
 // ## Prelims
 // A: Make sure the counter is reset at every new participant for more equal distribution,

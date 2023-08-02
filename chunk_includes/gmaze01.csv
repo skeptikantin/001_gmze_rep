@@ -1,4 +1,4 @@
-﻿Group,ExpId,Id,SntId,Sentence,Labels,Distractor,Critical
+﻿Group,ExpId,Id,ItmId,Sentence,Labels,Distractor,Critical
 B,gv,9,gv1,The father allowed his son to go spend all the money.,det1 noun1 verb1 pron2 noun2 to go verb adj3 det3 noun3,x-x-x trates footbrotte she etc cent mm loss used yeah click.,6
 A,gv,10,gv1,The father advised his son to go save all the money.,det1 noun1 verb1 pron2 noun2 to go verb adj3 det3 noun3,x-x-x trates footbrotte she etc cent mm loss used yeah click.,6
 D,gv,11,gv1,The father allowed his son to spend all the money.,det1 noun1 verb1 pron2 noun2 to verb adj3 det3 noun3,x-x-x trates footbrotte she etc cent loss used yeah click.,5
