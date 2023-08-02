@@ -103,8 +103,8 @@ newTrial("instructions" ,
         "<p><strong>Please try to be quick <em>and</em> accurate.</strong></p>" +
         "<p>Errors are okay, sometimes even expected. Just try to avoid too many errors<br> " +
         "by paying close attention to what you are reading.</p>"+
-        "<p>Early alternative words are pseudo-words, later words will be grammatically incorrect to continue.</p>" +
-        "<p>We’ll start with a couple of practice sentences.</p>")
+        "<p>Early alternative words are pseudo-words, later words will be grammatically incorrect continuations.</p>" +
+        "<p>Let's start with a couple of practice sentences.</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
@@ -154,9 +154,9 @@ Template("training_gmaze.csv", row =>
 
 newTrial("intermission" ,
 
-    newText("<p>Alright, you should be good to go for the 24 experimental sentences!<br/>" +
+    newText("<p>Alright, you should be good to go for the experiment!<br/>" +
         "Remember: try to be <strong>quick but accurate</strong>.</p>" +
-        "<p>The task is fun, but also demanding, so there are designated<br/>" +
+        "<p>The task is fun, but demanding, so there are designated<br/>" +
         "breaks every 6 sentences at which points you can pause if you want.<br/></p>" +
         "<p>Please <strong>do not</strong> take a break <em>while</em> reading a sentence.</p>")
         .css("font-family", "Verdana")
@@ -205,7 +205,7 @@ Template("gmaze01.csv", row =>
             .start()
             .wait()*/
     )
-        // logs additional variables in sentence file (e.g., Fun)
+        // logs additional variables in sentence file
         .log("ExpId", row.ExpId)
         .log("SntId", row.SntId)
         .log("Group", row.Group)
