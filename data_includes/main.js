@@ -207,7 +207,7 @@ Template("gmaze01.csv", row =>
     )
         // logs additional variables in sentence file
         .log("ExpId", row.ExpId)
-        .log("SntId", row.SntId)
+        .log("ItmId", row.ItmId)
         .log("Group", row.Group)
         .log("Critical", row.Critical)
     ,
