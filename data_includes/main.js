@@ -59,7 +59,7 @@ newTrial("intro",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
+    newText("<p><strong>Voluntary participation:</strong> I understand that my participation is voluntary.<br/>" +
         "<strong>Withdrawal:</strong> I can withdraw my participation at any time during the experiment.<br/>"+
         "<strong>Risks:</strong> There are no risks involved.<br/>"+
         "<strong>Equipment:</strong> I am participating from a device with a <strong>physical keyboard</strong>.<br/>"+
@@ -99,7 +99,7 @@ newTrial("instructions" ,
         .print()
     ,
     newText("<p>Use the <strong>F</strong> and <strong>J</strong> keys to select the word that continues the sentence.<br> " +
-        "If you pick the wrong word, you'll see an error, but can try again to continue reading.</p>" +
+        "If you pick the wrong word, you can try again to continue reading.</p>" +
         "<p><strong>Please try to be quick <em>and</em> accurate.</strong></p>" +
         "<p>Errors are okay, sometimes even expected. Just try to avoid too many errors<br> " +
         "by paying close attention to what you are reading.</p>"+
@@ -124,7 +124,7 @@ Template("training_gmaze.csv", row =>
 
         newVar("training_successes", 0)
             .global()
-            .test.is(v => v > 1)
+            .test.is(v => v > 2)
             .success(end())
         ,
 
@@ -176,7 +176,7 @@ newTrial("intermission" ,
 Template("gmaze01.csv", row =>
     newTrial("experiment",
 
-        /* add, temporarily, an ID to check where alternatives are ambiguous */
+        /* add, temporarily, an ID to check where alternatives are ambiguous
         newText("ExpId", row.ItmId)
             .css("font-family", "Verdana")
             .center()
@@ -188,7 +188,7 @@ Template("gmaze01.csv", row =>
             .center()
             .print()
         ,
-
+        */
         newTimer("Timer2", 300)
             .start()
             .wait()
@@ -304,10 +304,12 @@ newTrial("goodbye",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p><strong>Our feedback</strong>: The task tries to measure how we process sentences of varying<br/>"+
-        "(presumed) complexity. Trivially, more complex sentences take longer to read, but complexity<br/>"+
-        "comes in various forms and can be located in different parts of a sentence. Maze experiments<br/>"+
-        "help us learn more about how people understand and process language (well at least a tiny bit!).</p>")
+    newText("<p><strong>Our feedback</strong>: The task tries to measure how we process sentences of varying (presumed) <br/>"+
+        "complexity. Trivially, more complex sentences take longer to read, but complexity comes in<br/>"+
+        "various forms and can be located in different parts of a sentence (which is why you probably<br/>" +
+        "thought some sentences sounded a bit off).<br/>"+
+        "Maze experiments help us learn more about how we understand and process language<br/>"+
+        "(well at least a tiny bit!).</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
