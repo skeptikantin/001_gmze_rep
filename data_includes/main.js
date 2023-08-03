@@ -3,7 +3,7 @@
 // https://www.pcibex.net/documentation/
 
 PennController.ResetPrefix(null); // Shorten command names (keep this line here)
-PennController.DebugOff(); // comment this out for the experiment
+// PennController.DebugOff(); // comment this out for the experiment
 
 // ## Prelims
 // A: Make sure the counter is reset at every new participant for more equal distribution,
@@ -60,10 +60,10 @@ newTrial("intro",
         .print()
     ,
     newText("<p><strong>Voluntary participation:</strong> I understand that my participation is voluntary.<br/>" +
-        "<strong>Withdrawal:</strong> I can withdraw my participation at any time during the experiment.<br/>"+
+        "<strong>Withdrawal:</strong> I can withdraw at any time.<br/>"+
         "<strong>Risks:</strong> There are no risks involved.<br/>"+
         "<strong>Equipment:</strong> I am participating from a device with a <strong>physical keyboard</strong>.<br/>"+
-        "<strong>Environment:</strong> I participate from a quiet environment and can <strong>work uninterrupted</strong>.</p>")
+        "<strong>Environment:</strong> I am in a quiet environment and can <strong>work uninterrupted</strong>.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
